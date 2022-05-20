@@ -1,0 +1,8 @@
+packages:
+  - name: api
+    actions:
+      - name: test-case
+        runtime: 'nodejs:default'
+        limits:
+          timeout: 5000
+          memory: 128
