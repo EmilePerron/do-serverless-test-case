@@ -27,3 +27,8 @@ Error in DO's Insights tab:
 I also added this test function to my functions sandbox on DO. Here are the results in the UI:
 ![Sandbox error](docs/sandbox-results.png)
 
+
+
+## Async vs sync
+
+Making the function non-`async` fixes the issue. So perhaps the issue is related to the way rejected promises are handled in async serverless functions.
